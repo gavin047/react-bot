@@ -1,9 +1,11 @@
+/* Main container */
 .App {
   text-align: center;
 }
 
+/* Logo */
 .App-logo {
-  height: 40vmin;
+  height: 48vmin;
   pointer-events: none;
 }
 
@@ -12,7 +14,13 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.AppHeader
+{
+  text-align: center;
+  background-color: #007bff;
+}
 
+/* Header */
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -22,12 +30,15 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  text-align: center;
 }
 
+/* Links */
 .App-link {
-  color: #61dafb;
+  color: #61fba6;
 }
 
+/* Logo Spin Animation */
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +46,131 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Generic Header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Bot Collection */
+.bot-collection {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+/* Bot Card */
+.bot-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Bot Image */
+.bot-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 70%;
+  margin-bottom: 2rem;
+}
+
+/* Your Bot Army */
+.your-bot-army {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.your-bot-army h2 {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* Bot Specs */
+.bot-specs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bot-specs img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.bot-specs h3 {
+  margin-bottom: 5rem;
+}
+
+.bot-specs p {
+  margin-bottom: 1rem;
+}
+
+.bot-specs button {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  color: #241794;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.bot-specs button:hover {
+  background-color: #555;
+}
+
+/* Sort Bar */
+.sort-bar {
+  align-items: center;
+color: greenyellow;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: red;
+}
+
+.sort-bar label {
+  font-weight: bold;
+}
+
+.sort-bar select {
+  padding: 0.5rem;
+}
+
+
+/* Loading */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 1.5rem;
+}
+body{
+  background-color: purple;
+}
+/* Button */
+.button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
 }
